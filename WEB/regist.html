@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form method="POST" action="process_registration.php">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required><br><br>
+        
+        <label for="nationality">Nationality:</label>
+        <select name="nationality" id="nationality" required>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Other">Other</option>
+        </select><br><br>
+        
+        <input type="submit" value="Register">
+    </form>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+        
+        const firebaseConfig = {
+          apiKey: "AIzaSyCm5QqLqgPodhmC32RxmAcsOVKYyyFlmng",
+          authDomain: "iisma-songkla.firebaseapp.com",
+          databaseURL: "https://iisma-songkla-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "iisma-songkla",
+          storageBucket: "iisma-songkla.appspot.com",
+          messagingSenderId: "500128277671",
+          appId: "1:500128277671:web:d2e0bc1d0fd8cc74756782",
+          measurementId: "G-T1EFX2CG0Y"
+        };
+    
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+
+</body>
+</html>
