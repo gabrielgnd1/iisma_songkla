@@ -1,0 +1,15 @@
+{
+  "name": "iisma_songkla",
+  "version": "1.0.0",
+  "description": "Website bersama untuk IISMA Prince of Songkla University",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./WEB/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
